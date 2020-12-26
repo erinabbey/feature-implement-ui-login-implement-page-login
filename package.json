@@ -41,7 +41,7 @@
   "dependencies": {
     "bootstrap": "4.4.1",
     "gulp-uglify-es": "^2.0.0",
-    "jquery": "3.4.1",
+    "jquery": "3.5.1",
     "lg-autoplay": "^1.2.1",
     "lg-fullscreen": "^1.2.1",
     "lg-hash": "^1.0.4",

@@ -8,45 +8,6 @@ $xs-min-width: 576px;
 $xs-max-width: 575px;
 $smx-max-width: 456px;
 $xmx-max-width: 320px;
-.container-fluid {
-  padding-right: 10vw;
-  padding-left: 10vw;
-
-  @include breakpoint(1336) {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-
-  @include breakpoint(767) {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-body {
-
-  /* width */
-  &::-webkit-scrollbar {
-    width: 6px;
-    border-radius: 100px;
-  }
-
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    background: $background_danger;
-    border-radius: 10px;
-  }
-
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-}
 
 /* /////////// IMAGE ZOOM /////////// */
 @keyframes zoomInImage {

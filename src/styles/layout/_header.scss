@@ -10,19 +10,13 @@ body {
 }
 
 .bg-custom {
-  background-color: transparent;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
   text-align: center;
-  padding: 0 70px;
   opacity: 1;
   transform: translateY(0);
-  &.sticky {
-    background-color: $background_white;
-  }
 }
 
 .navbar-brand {
@@ -37,14 +31,6 @@ body {
       a {
         color: $hover_color !important;
       }
-    }
-  }
-
-  .nav-link {
-    color: $content_color !important;
-    padding: 26px 16px;
-    &:hover {
-      color: $hover_danger !important;
     }
   }
 
@@ -158,11 +144,6 @@ body {
   .nav-item {
     padding: 0 10px;
   }
-
-  .dropdown-mega {
-    left: 100px;
-    right: 100px;
-  }
 }
 
 @include breakpoint(1129) {
@@ -174,10 +155,6 @@ body {
     padding: 0 10px;
   }
 
-  .dropdown-mega {
-    left: 80px;
-    right: 80px;
-  }
 }
 
 @include breakpoint(1090) {
@@ -189,10 +166,6 @@ body {
     padding: 0 10px;
   }
 
-  .dropdown-mega {
-    left: 80px;
-    right: 80px;
-  }
 }
 
 @include breakpoint(1024) {
@@ -210,19 +183,11 @@ body {
     }
   }
 
-  .dropdown-mega {
-    left: 30px;
-    right: 30px;
-  }
 }
 
 @include breakpoint(780) {
   .nav-item {
     padding: 0 5px;
-  }
-
-  .dropdown-mega {
-    display: none;
   }
 }
 
@@ -293,10 +258,6 @@ body {
         display: block;
       }
 
-      .order-1 {
-        flex: 1;
-      }
-
       .order-0 {
         position: relative;
         margin-bottom: 0px;
@@ -318,32 +279,9 @@ body {
         }
       }
 
-      .order-3 {
-        padding-bottom: 45px;
-      }
-
-      .box-language {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        line-height: 50px;
-        text-align: center;
-        background-color: #007141;
-
-        .nav-item {
-          padding: 0;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-      }
-
       .nav-item {
         padding: 20px 0;
       }
     }
   }
-}
-
-@include breakpoint(414) {
-  padding-bottom: 60px;
 }
