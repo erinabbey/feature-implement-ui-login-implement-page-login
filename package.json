@@ -58,6 +58,7 @@
     "node-sass": "^5.0.0",
     "pagepiling.js": "^1.5.6",
     "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
     "scrollbooster": "^3.0.2",
     "slick-carousel": "^1.8.1",
     "waypoints": "^4.0.1",
