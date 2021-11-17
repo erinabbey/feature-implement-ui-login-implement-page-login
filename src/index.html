@@ -30,47 +30,48 @@
 <!-- endbuild -->
 <!-- build:css(.tmp) styles/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="styles/main.scss" /> -->
 <!-- endbuild -->
 
   </head>
 
   <body>
-    <div class="wrapper">
-      <!-- include header.html -->
-      <nav class="navbar navbar-expand-md bg-custom">
-  <div class="mr-auto order-0">
-    <a class="mx-auto" href="/">
-     Logo
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse">
-      <div id="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </button>
-  </div>
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" title="Home" href="/index.html">Home</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="container">
+      <div class="login-content">
+        <div class="login-container">
+          <div class="login">
+            <div class="">
+              <h1 class="header">Welcome back!</h1>
+              <p class="subtitle">Please login to continue</p>
+            </div>
 
-      <main class="main">
-        <div class="container-fluid">
-          Main content
+            <div class="">
+              <div class="form-input">
+                <label for="email" class="label">
+                  Email address
+                </label>
+                <input id="email" type="text" class="input"></input>
+              </div>
+              <div class="form-input">
+                <label for="password" class="label">
+                  Password
+                </label>
+                <input id="password" type="password" class="input"></input>
+              </div>
+              <div class="login-btn">
+                <button class="button">Button Text</button>
+              </div>
+              <div class="forgot-password-text">forgot password?</div>
+              <div class="sign-up-text">Sign up</div>
+            </div>
+          </div>
         </div>
-      </main>
-      <!-- include footer.html -->
-      <footer class="footer-container">
-  <div class="container-fluid">
-    footer
-  </div>
-  <div class="clearfix"></div>
-</footer>
+        <div class="left-panel left-image">
+          <div class="text-container text">
+            <p>scratch</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- include scripts.html -->
     <!-- build:js(.) scripts/vendor.min.js -->
