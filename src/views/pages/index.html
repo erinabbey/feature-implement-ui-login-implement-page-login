@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
-    <!-- include head.html -->
     @@include('../layouts/head.html', { "title": "Demo" })
-    <!-- include styles.html -->
     @@include('../layouts/styles.html')
   </head>
-
   <body>
     <div class="wrapper">
-      <!-- include header.html -->
-      <!-- @@include('../layouts/header.html') -->
       <main class="main">
-        <div class="container-fluid">
-          <div class="container">
+          <div class="card-login-container">
             <div class="login-content">
               <div class="login-container">
                 <div class="login">
@@ -21,7 +15,7 @@
                     <h1 class="header">Welcome back!</h1>
                     <p class="subtitle">Please login to continue</p>
                   </div>
-                  <div class="">
+                  <div>
                     <div class="form-input">
                       <label for="email" class="label"> Email address </label>
                       <input id="email" type="text" class="input" />
@@ -30,27 +24,27 @@
                       <label for="password" class="label"> Password </label>
                       <input id="password" type="password" class="input" />
                     </div>
-                    <div class="login-btn">
+                    <div class="login-btn-container">
                       <button class="button">Button Text</button>
                     </div>
-                    <div class="forgot-password-text">forgot password?</div>
-                    <div class="sign-up-text">Sign up</div>
+                    <div class="footer-text">
+                    <a href = "#" class="forgot-password-text">Forgot password?</a>
+                    <div class="signup-btn-container">
+                    <button class="signup-btn">Sign up</button>
+                  </div>
+                  </div>
                   </div>
                 </div>
               </div>
-              <div class="left-panel left-image">
+              <div class="image-login">
                 <div class="text-container text">
                   <p>scratch</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </main>
-      <!-- include footer.html -->
-      <!-- @@include('../layouts/footer.html') -->
     </div>
-    <!-- include scripts.html -->
     @@include('../layouts/scripts.html')
   </body>
 </html>
