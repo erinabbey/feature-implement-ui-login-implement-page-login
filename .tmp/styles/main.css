@@ -661,7 +661,7 @@ textarea {
   width: 80%;
   font-family: Helvetica;
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 0;
   text-align: center;
   line-height: 21px;
@@ -3134,98 +3134,11 @@ body {
       flex: 0 0 100%;
       max-width: 100%; } }
 
-@use 'variables';
-.button {
-  border-radius: 8px;
-  line-height: 16px;
-  background-color: #30be76;
-  padding: 8px 12px;
-  margin: 10px 20px;
-  border: none;
-  width: 80%;
-  font-family: Helvetica;
-  font-size: 16px;
-  color: #fff;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 21px;
-  cursor: pointer; }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("./../fonts/icomoon/fonts/icomoon.eot?mblxk1");
-  src: url("./../fonts/icomoon/fonts/icomoon.eot?mblxk1#iefix") format("embedded-opentype"), url("./../fonts/icomoon/fonts/icomoon.ttf?mblxk1") format("truetype"), url("./../fonts/icomoon/fonts/icomoon.woff?mblxk1") format("woff"), url("./../fonts/icomoon/fonts/icomoon.svg?mblxk1#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'slick';
-  src: url("./../fonts/slick.eot");
-  src: url("./../fonts/slick.eot?#iefix") format("embedded-opentype"), url("./../fonts/slick.woff") format("woff"), url("./../fonts/slick.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff slick-image-url("./../images/ajax-loader.gif") center center no-repeat; }
-
-[class^='icon-'],
-[class*=' icon-'] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-external:before {
-  content: "\e906"; }
-
-.icon-quality:before {
-  content: "\e907"; }
-
-.icon-shovel:before {
-  content: "\e908"; }
-
-.icon-coding:before {
-  content: "\e909"; }
-
-.icon-rocket:before {
-  content: "\e90a"; }
-
-.icon-light:before {
-  content: "\e90b"; }
-
-.icon-prev:before {
-  content: "\e905"; }
-
-.icon-next:before {
-  content: "\e904"; }
-
-.icon-speech:before {
-  content: "\e900"; }
-
-.icon-phone:before {
-  content: "\e901"; }
-
-.icon-mail-contact:before {
-  content: "\e902"; }
-
-.icon-home:before {
-  content: "\e903"; }
-
 body {
   background-image: url("../../images/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover; }
-  body .container {
+  body .card-login-container {
     width: 100%;
     height: 100vh; }
   body .login-content {
@@ -3258,8 +3171,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  body .left-panel {
-    background-image: url("../../images/Group.png");
+  body .image-login {
+    background-image: url("../../images/panel-login.png");
     background-size: cover;
     position: absolute;
     display: flex;
@@ -3279,9 +3192,6 @@ body {
     color: #363837;
     letter-spacing: 0.9px;
     line-height: 44.8px; }
-  body .right-panel {
-    width: 100%;
-    z-index: 1; }
   body .header {
     font-family: Helvetica;
     font-size: 24px;
@@ -3296,11 +3206,6 @@ body {
     color: #606060;
     letter-spacing: 0;
     line-height: 22px; }
-  body .login-form-contaienr {
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    position: absolute; }
   body .form-input {
     height: 65px;
     text-align: left;
@@ -3323,11 +3228,16 @@ body {
     display: block;
     outline: none;
     border-bottom: 1px solid #cccccc; }
-  body .input:focus {
-    background: #fff; }
-  body .login-btn {
+    body .input:focus {
+      background: #ffffff; }
+  body .login-btn-container {
     margin: auto;
     width: 100%; }
+  body .footer-text {
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
   body .forgot-password-text {
     font-family: Helvetica;
     font-size: 14px;
@@ -3336,9 +3246,16 @@ body {
     text-align: center;
     line-height: 22px;
     margin-bottom: 10px; }
-  body .sign-up-text {
+  body .signup-btn-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto; }
+  body .signup-btn {
     font-family: Helvetica;
     font-size: 16px;
     color: #30be76;
     letter-spacing: 0.32px;
-    text-align: center; }
+    text-align: center;
+    border: none;
+    background: transparent; }

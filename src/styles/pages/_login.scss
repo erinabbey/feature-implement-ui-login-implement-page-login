@@ -1,21 +1,19 @@
-@import "../base/button";
-@import "../base/fonts";
-@import "../base/variables";
 $background-image: url("../../images/background.jpeg");
-$background-image-leftpanel: url("../../images/Group.png");
+$background-image-leftpanel: url("../../images/panel-login.png");
+$color_of_label: #a8a8a8;
+$color_of_signup_text: #30be76;
+$main_color: #030f09;
 body {
   background-image: $background-image;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-blend-mode: overlay;
 
-  .container {
+  .card-login-container {
     width: 100%;
     height: 100vh;
   }
-  // include left and right panel
   .login-content {
-    color: #030f09;
+    color: $main_color;
     background: rgb(255, 255, 255);
     border-radius: 7px;
     box-shadow: 0 8px 16px rgba(119, 119, 119, 0.1),
@@ -29,7 +27,6 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  // right panel: login content
   .login-container {
     position: absolute;
     left: 50%;
@@ -49,8 +46,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  //left content: background, logo, text
-  .left-panel {
+  .image-login {
     background-image: $background-image-leftpanel;
     background-size: cover;
     position: absolute;
@@ -62,15 +58,11 @@ body {
     height: 100%;
     width: 50%;
   }
-
   .header-text-container {
     margin-bottom: 20px;
-    // margin-left: 0;
   }
-  // logo and text on the left panel
   .text-container {
     width: 100%;
-    // height: 62px;
   }
   .text {
     font-family: Helvetica;
@@ -79,15 +71,10 @@ body {
     letter-spacing: 0.9px;
     line-height: 44.8px;
   }
-  // main content include text, label, input, button
-  .right-panel {
-    width: 100%;
-    z-index: 1;
-  }
   .header {
     font-family: Helvetica;
     font-size: 24px;
-    color: #030f09;
+    color: $main_color;
     letter-spacing: 0;
     text-align: center;
     line-height: 32px;
@@ -100,12 +87,7 @@ body {
     letter-spacing: 0;
     line-height: 22px;
   }
-  .login-form-contaienr {
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    position: absolute;
-  }
+
   .form-input {
     height: 65px;
     text-align: left;
@@ -114,7 +96,7 @@ body {
   .label {
     font-family: Helvetica;
     font-size: 14px;
-    color: #a8a8a8;
+    color: $color_of_label;
     letter-spacing: 0;
     line-height: 22px;
   }
@@ -122,7 +104,7 @@ body {
     background: transparent;
     font-family: Helvetica;
     font-size: 16px;
-    color: #030f09;
+    color: $main_color;
     letter-spacing: 0;
     line-height: 22px;
     border: none;
@@ -130,14 +112,19 @@ body {
     display: block;
     outline: none;
     border-bottom: 1px solid #cccccc;
+    &:focus {
+      background: #ffffff;
+    }
   }
-  .input:focus {
-    background: #fff;
-  }
-  //button text
-  .login-btn {
+  .login-btn-container {
     margin: auto;
     width: 100%;
+  }
+  .footer-text {
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .forgot-password-text {
     font-family: Helvetica;
@@ -148,11 +135,19 @@ body {
     line-height: 22px;
     margin-bottom: 10px;
   }
-  .sign-up-text {
+  .signup-btn-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .signup-btn {
     font-family: Helvetica;
     font-size: 16px;
-    color: #30be76;
+    color: $color_of_signup_text;
     letter-spacing: 0.32px;
     text-align: center;
+    border: none;
+    background: transparent;
   }
 }
